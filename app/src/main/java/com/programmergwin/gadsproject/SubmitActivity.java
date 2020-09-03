@@ -66,18 +66,6 @@ public class SubmitActivity extends AppCompatActivity implements View.OnClickLis
         }
     }
 
-    private void showConfirmDialog() {
-        FragmentManager fm = getSupportFragmentManager();
-        ConfirmDialogFragment dialogFragment = new ConfirmDialogFragment();
-        dialogFragment.show(fm, "dialog_confirm");
-    }
-
-    private void showDialogmessage(int i) {
-        FragmentManager fm = getSupportFragmentManager();
-        DialogFragment dialogFragment = MyDialogFragment.newInstance(i);
-        dialogFragment.show(fm, "dialog");
-    }
-
     private boolean NoFieldIsEmpty() {
         boolean flag=true;
         if(edtFirstName.getText()==null || edtLastName.getText()==null || edtEmail.getText()==null || edtProjectLink.getText()==null)
@@ -114,6 +102,19 @@ public class SubmitActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onFinishEditDialog() {
         //send project to api
-        SubmitToApi();
+       SubmitToApi();
     }
+
+    private void showConfirmDialog() {
+        FragmentManager fm = getSupportFragmentManager();
+        ConfirmDialogFragment dialogFragment = new ConfirmDialogFragment();
+        dialogFragment.show(fm, "dialog_confirm");
+    }
+
+    private void showDialogmessage(int i) {
+        FragmentManager fm = getSupportFragmentManager();
+        DialogFragment dialogFragment = MyDialogFragment.newInstance(i);
+        dialogFragment.show(fm, "dialog");
+    }
+
 }
