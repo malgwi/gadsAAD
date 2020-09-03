@@ -21,6 +21,9 @@ import com.programmergwin.gadsproject.controls.RetrofitClientInstance;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class SubmitActivity extends AppCompatActivity implements View.OnClickListener, DialogListener {
 
@@ -75,22 +78,32 @@ public class SubmitActivity extends AppCompatActivity implements View.OnClickLis
         return flag;
     }
 
+    public static final String BASE_URL2 = "https://docs.google.com/forms/d/e/1FAIpQLSf9d1TcNU6zc6KR8bSEM41Z1g1zl35cwZr2xyjIhaMAz8WChQ/";
     private void SubmitToApi() {
-        ApiEndpointInterface apiService = RetrofitClientInstance.getRetrofitInstance(2).create(ApiEndpointInterface.class);
-        Call<Void> call = apiService.SubmitProject(edtFirstName.getText().toString(), edtLastName.getText().toString(), edtEmail.getText().toString(), edtProjectLink.getText().toString());
-        call.enqueue(new Callback<Void>() {
-            @Override
-            public void onResponse(@NonNull Call<Void> call, @NonNull Response<Void> response) {
-                showDialogmessage(0);
-                assert response.body() != null;
-                String res = response.body().toString();
-            }
+        try {
+            Retrofit  retrofit = new Retrofit.Builder()
+                    .baseUrl(BASE_URL2)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .addConverterFactory(ScalarsConverterFactory.create())
+                    .build();
 
-            @Override
-            public void onFailure(@NonNull Call<Void> call, @NonNull Throwable t) {
-                showDialogmessage(-1);
-            }
-        });
+            ApiEndpointInterface apiService = retrofit.create(ApiEndpointInterface.class);
+
+            Call<Void> call = apiService.SubmitProject(edtFirstName.getText().toString(), edtLastName.getText().toString(), edtEmail.getText().toString(), edtProjectLink.getText().toString());
+            call.enqueue(new Callback<Void>() {
+                @Override
+                public void onResponse(@NonNull Call<Void> call, @NonNull Response<Void> response) {
+                    showDialogmessage(0);
+                }
+
+                @Override
+                public void onFailure(@NonNull Call<Void> call, @NonNull Throwable t) {
+                    showDialogmessage(-1);
+                }
+            });
+        }catch(Exception ex){
+            String exc = ex.getMessage().toString();
+        }
     }
 
     private void goBack() {
