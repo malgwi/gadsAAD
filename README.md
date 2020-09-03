@@ -1,5 +1,8 @@
 # GADS_Project
-GADS PROJECT
+
+![Image of Splash Screen](https://github.com/GWINA/GADS_Project/blob/master/MyOwnImage/splash_screen.jpeg)
+
+GADS PROJECT DESDCRIPTION
 Google Africa Developer Scholarship Phase II
 
 Associate Android Developer Practice Project
@@ -33,3 +36,5 @@ Make a NETWORK POST request to this Google Form using any network library. [Retr
 [Hint]: Wondering how to use the Entry ids in your request ? See example below using Retrofit.
 
 Submit your feedback on the practice project here - bit.ly/GADSPracticeProjectSubmission
+
+Sample Project Description Image is here:  https://github.com/GWINA/GADS_Project/tree/master/ProjectImageSample
