@@ -51,7 +51,7 @@ public class LearningLeadersFragment extends Fragment {
     }
 
     private void getContent() {
-        ApiEndpointInterface apiService = RetrofitClientInstance.getRetrofitInstance().create(ApiEndpointInterface.class);
+        ApiEndpointInterface apiService = RetrofitClientInstance.getRetrofitInstance(1).create(ApiEndpointInterface.class);
         Call<ArrayList<LearningUserModel>> callItem = apiService.getLearningUserList();
         callItem.enqueue(new Callback<ArrayList<LearningUserModel>>() {
             @Override
