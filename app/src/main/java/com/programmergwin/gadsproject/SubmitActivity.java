@@ -95,7 +95,7 @@ public class SubmitActivity extends AppCompatActivity implements View.OnClickLis
             public void onResponse(@NonNull Call<Void> call, @NonNull Response<Void> response) {
                 showDialogmessage(0);
                 assert response.body() != null;
-                String resp = response.body().toString();
+                String res = response.body().toString();
             }
 
             @Override
