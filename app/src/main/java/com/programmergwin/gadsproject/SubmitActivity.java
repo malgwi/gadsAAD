@@ -115,8 +115,7 @@ public class SubmitActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onFinishEditDialog() {
         //send project to api
-        showDialogmessage(0);
-//       SubmitToApi();
+       SubmitToApi();
     }
 
     private void showConfirmDialog() {
