@@ -1,4 +1,4 @@
-package com.programmergwin.gadsproject;
+package com.malgwi.gadsproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 

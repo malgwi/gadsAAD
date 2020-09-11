@@ -1,4 +1,4 @@
-package com.programmergwin.gadsproject.controls;
+package com.malgwi.gadsproject.controls;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.programmergwin.gadsproject.R;
+import com.malgwi.gadsproject.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

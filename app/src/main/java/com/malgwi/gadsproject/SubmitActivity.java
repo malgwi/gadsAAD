@@ -1,12 +1,10 @@
-package com.programmergwin.gadsproject;
+package com.malgwi.gadsproject;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentManager;
 
-import android.app.Fragment;
-import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,9 +12,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.programmergwin.gadsproject.controls.ApiEndpointInterface;
-import com.programmergwin.gadsproject.controls.DialogListener;
-import com.programmergwin.gadsproject.controls.RetrofitClientInstance;
+import com.malgwi.gadsproject.controls.ApiEndpointInterface;
+import com.malgwi.gadsproject.controls.DialogListener;
 
 import retrofit2.Call;
 import retrofit2.Callback;

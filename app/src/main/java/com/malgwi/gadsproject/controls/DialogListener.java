@@ -1,4 +1,4 @@
-package com.programmergwin.gadsproject.controls;
+package com.malgwi.gadsproject.controls;
 
 
 public interface DialogListener {

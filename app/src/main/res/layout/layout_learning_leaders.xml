@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="0dp"
     android:layout_marginBottom="10dp"
-    app:cardBackgroundColor="#E6E6E6"
+
     app:cardCornerRadius="10dp"
     app:cardElevation="10dp">
 
@@ -19,20 +19,21 @@
 
         <ImageView
             android:id="@+id/imgLogo"
-            android:layout_width="100dp"
+            android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginStart="30dp"
-            android:scaleType="fitXY"
+            android:layout_marginStart="16dp"
+
             android:src="@drawable/gads"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
         <TextView
             android:id="@+id/tv_learner_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="16dp"
             android:text="Phris Mogel"
             android:textSize="18sp"
             android:textStyle="bold"

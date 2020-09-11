@@ -1,4 +1,4 @@
-package com.programmergwin.gadsproject;
+package com.malgwi.gadsproject;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
-import com.programmergwin.gadsproject.controls.ViewPagerAdapter;
+import com.malgwi.gadsproject.controls.ViewPagerAdapter;
 
 public class LeaderBoardActivity extends AppCompatActivity implements View.OnClickListener {
 

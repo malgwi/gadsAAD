@@ -1,4 +1,4 @@
-package com.programmergwin.gadsproject;
+package com.malgwi.gadsproject;
 
 import android.content.Context;
 

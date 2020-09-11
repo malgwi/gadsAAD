@@ -1,12 +1,12 @@
-package com.programmergwin.gadsproject.controls;
+package com.malgwi.gadsproject.controls;
 
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import com.programmergwin.gadsproject.LearningLeadersFragment;
-import com.programmergwin.gadsproject.SkillIQLeadersFragment;
+import com.malgwi.gadsproject.LearningLeadersFragment;
+import com.malgwi.gadsproject.SkillIQLeadersFragment;
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     public ViewPagerAdapter(FragmentManager fm) {

@@ -1,4 +1,4 @@
-package com.programmergwin.gadsproject;
+package com.malgwi.gadsproject;
 
 import android.os.Bundle;
 
@@ -12,11 +12,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.google.gson.Gson;
-import com.programmergwin.gadsproject.controls.ApiEndpointInterface;
-import com.programmergwin.gadsproject.controls.LearningRecyclerAdapter;
-import com.programmergwin.gadsproject.controls.LearningUserModel;
-import com.programmergwin.gadsproject.controls.RetrofitClientInstance;
+import com.malgwi.gadsproject.controls.ApiEndpointInterface;
+import com.malgwi.gadsproject.controls.LearningRecyclerAdapter;
+import com.malgwi.gadsproject.controls.LearningUserModel;
+import com.malgwi.gadsproject.controls.RetrofitClientInstance;
 
 import java.util.ArrayList;
 
